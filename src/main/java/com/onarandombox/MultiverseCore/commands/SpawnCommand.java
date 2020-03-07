@@ -52,7 +52,7 @@ public class SpawnCommand extends MultiverseCommand {
             }
             Player target = this.plugin.getServer().getPlayer(args.get(0));
             if (target != null) {
-                target.sendMessage("Teleporting to this world's spawn...");
+                target.sendMessage("Téléportation au spawn de ce monde...");
                 spawnAccurately(target);
 
                 if (player != null) {
@@ -69,7 +69,7 @@ public class SpawnCommand extends MultiverseCommand {
                 return;
             }
             if (player != null) {
-                player.sendMessage("Teleporting to this world's spawn...");
+                player.sendMessage("Téléportation au spawn de ce monde...");
                 spawnAccurately(player);
             } else {
                 sender.sendMessage("From the console, you must provide a PLAYER.");
